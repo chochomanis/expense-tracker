@@ -1,0 +1,73 @@
+
+
+body {
+
+  color: white;
+  background-image: url('img/dark-background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* Sidebar Header Styles */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.sidebar-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 15px auto; /* Center align in the sidebar */
+  display: block;
+}
+
+/* Title and Dark Mode Button Styles */
+.sidebar-header .d-flex {
+  display: flex;
+  flex-direction: column; /* Stacks title and dark mode vertically */
+  margin-left: 10px;
+}
+
+.sidebar-header h4 {
+  margin-bottom: 0;
+}
+
+.form-check-label {
+  font-size: 1rem;
+  color: inherit;
+}
+
+
+body {
+  background-color: #9a9a9a;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='82' height='82' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23DCEFFA' fill-opacity='0.09' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+}
+body {
+  background-color:#cec325;
+  color: black;
+  background-image: url('img/dark-background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+.form-check-label {
+  font-size: 1.1rem;
+  color: inherit;
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+

@@ -1,0 +1,40 @@
+.title{
+  font-family: "Monomaniac One", serif;
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: uppercase;
+  position: relative; 
+  color: transparent;
+  background: linear-gradient(
+    135deg, #180e70, #c21c8a, #180e70
+  );
+  background-size: 500px 100%;
+  background-clip: text;
+}
+
+
+
+
+.justify {
+  text-align: justify;
+}
+
+.position-relative {
+  position: relative; 
+}
+
+.logo {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  opacity: 0.4; 
+  z-index: 1; 
+  width: 100px; 
+}
+
+
+body {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='57' height='57' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23DCEFFA' fill-opacity='0.63' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+}

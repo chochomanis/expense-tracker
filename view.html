@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" id="html-element">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- style.css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/all.css">
+  <link rel="stylesheet" href="./style.css" />
+
+
+  <!-- FontAwesome (for the icon) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+  <style>
+    body {
+      background-color: #ffffff;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='49' height='49' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23F1EFA7' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+    }
+
+
+    [data-bs-theme="dark"] body {
+      background-color: #121212;
+      color: white;
+      background-image: url('img/dark-background.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+
+    [data-bs-theme="dark"] .card {
+      background-color: #2b2b2b;
+    }
+
+    .form-check-label {
+      font-size: 1.1rem;
+      color: inherit;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Dark Mode Toggle Section -->
+  <div class="form-check form-switch d-flex justify-content-end px-3">
+    <input class="form-check-input" type="checkbox" id="darkModeToggle" />
+    <label class="form-check-label" for="darkModeToggle" id="themeLabel">Dark Mode</label>
+  </div>
+
+
+  <div class="container mt-4 pt-0.0">
+    <div class="container my-4 text-center position-relative">
+      <img src="img/et logo.png" alt="Expense Tracker Logo" class="logo">
+      <div class="title">Expense Tracker</div>
+    </div>
+  </div>
+
+
+     
+          <!-- Second Row: CRUD Section -->
+          <div class="d-flex justify-content-center align-items-center" style="min-height: 70vh;">
+            <div class="card border-0 shadow">
+              <div class="card-body">
+                  <h5>PERSONAL BUDGET (November) </h5>
+                  <div class="container mt-4">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th style="width: 50%;">Types</th>
+                          <th style="width: 50%;">Total Expense (RM)</th>
+                    
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Housing</td>
+                          <td>2000</td>
+  
+                        </tr>
+                        
+                        <tr>
+                          <td>Utilities</td>
+                          <td>900</td>
+                         
+                        </tr>
+                        <tr>
+                          <td>Groceries</td>
+                          <td>3000</td>
+                                        </tr>
+                        <tr>
+                          <td>Health</td>
+                          <td>1000</td>                       
+                        </tr>
+                        <tr>
+                          <td>Transportation</td>
+                          <td>3000</td>                          
+                        </tr>
+
+                        <tr style="font-weight: bold;">
+                          <td>TOTAL</td>
+                          <td>9900</td>
+                        </tr>
+
+                    </table>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </body>
+
+       <!-- footer -->
+    <footer class="footer mt-auto py-3 bg-body-tertiary">
+      
+
+  </footer>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGFhCL94wvp9D7fyMXEtHPl/5HfCVv8ZZiGDOQ5Uzp1"
+        crossorigin="anonymous"></script>
+
+      <!-- Dark Mode Script -->
+      <script>
+        function setTheme(theme) {
+          document.documentElement.setAttribute("data-bs-theme", theme);
+          localStorage.setItem("theme", theme);
+          document.getElementById("themeLabel").innerText = theme === "dark" ? "Dark Mode On" : "Dark Mode Off";
+        }
+
+        document.getElementById("darkModeToggle").addEventListener("change", function () {
+          setTheme(this.checked ? "dark" : "");
+        });
+
+        window.onload = function () {
+          const savedTheme = localStorage.getItem("theme");
+          if (savedTheme) {
+            setTheme(savedTheme);
+            document.getElementById("darkModeToggle").checked = savedTheme === "dark";
+          }
+        };
+      </script>
+
+
+<div class="d-flex justify-content-end pe-3">
+  <a href="home.html" i class="fa-solid fa-right-to-bracket"  class="btn btn-primary" style="font-size: 30px; color: rgb(149, 15, 167);"></a>
+</div>
+
+</body>
+
+</html>

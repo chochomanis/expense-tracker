@@ -1,0 +1,50 @@
+body {
+
+    color: white;
+    background-image: url('img/dark-background.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  body {
+    background-color: #9a9a9a;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='82' height='82' viewBox='0 0 200 200'%3E%3Cpolygon fill='%23DCEFFA' fill-opacity='0.09' points='100 0 0 100 100 100 100 200 200 100 200 0'/%3E%3C/svg%3E");
+  }
+  body {
+    background-color:#cec325;
+    color: black;
+    background-image: url('img/dark-background.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  .form-check-label {
+    font-size: 1.1rem;
+    color: inherit;
+  }
+  
+  .logo {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  
+  .rightBracketIcon {
+    color: green;       /* Default green color */
+    font-size: 50px;    /* Bigger size */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth animation */
+  }
+  
+  .rightBracketIcon:hover {
+    color: darkgreen;   /* Darker green on hover */
+    transform: scale(1.2); /* Slightly enlarge on hover */
+    cursor: pointer;    /* Pointer cursor on hover */
+  }
+  
